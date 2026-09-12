@@ -1,0 +1,78 @@
+/* Container for the overall Dashboard layout */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* Page section title */
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 8px;
+}
+
+/* Responsive Grid for 7 Days of the Week */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Individual Day Box Column */
+.dayColumn {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dayColumn:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Day Name Header */
+.dayTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #60a5fa;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* List container inside a day column */
+.workoutList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Fallback text when no workouts exist for that day */
+.emptyText {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: auto 0;
+  text-align: center;
+}
+
+/* Responsive breakpoint for smaller screens */
+@media (max-width: 640px) {
+  .dashboard {
+    padding: 16px 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

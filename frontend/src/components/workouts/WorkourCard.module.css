@@ -1,0 +1,40 @@
+.card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.exerciseList {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.exerciseItem {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.trackButton {
+  display: block;
+  text-align: center;
+  background-color: rgba(59, 130, 246, 0.15);
+  color: var(--primary);
+  text-decoration: none;
+  padding: 6px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.trackButton:hover {
+  background-color: rgba(59, 130, 246, 0.25);
+}

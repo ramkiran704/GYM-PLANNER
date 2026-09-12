@@ -1,0 +1,42 @@
+.formCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.formHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.exerciseRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exerciseRow input[type="text"] {
+  flex: 3;
+}
+
+.exerciseRow input[type="number"] {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .formHeader, .exerciseRow {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
